@@ -173,7 +173,7 @@ function getWeeks(props, moment, classes, reminderList, isMobile, theme, dispatc
                                       </Grid>
                                       {
                                         reminderList.map((reminder, index) => {
-                                          // getWeather(reminder, index);
+                                          getWeather(reminder, index);
                                           if(moment(reminder.selectedDate).format('MM-DD-YYYY') === moment(day).format('MM-DD-YYYY') && !isMobile) {
                                               return (
                                                 <Card key={reminder+index} style={{backgroundColor: reminder.color, padding:5, marginBottom:5, color: '#FFF'}}>
